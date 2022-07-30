@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link src="../Iconos/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" type='text/css' crossorigin="anonymous">
+    <title>Satungo</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedorlogo">
+            <a href="./index.html"><img src="./Imgs/pngegg.png" alt="Logo" class="navlogo"></a>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="listanav" id="listanav">
+                <li class="navitem"><a href="./index.html" class="navlink">Inicio</a></li>
+                <li class="navitem"><a href="./tienda.html" class="navlink">Hacé tu pedido</a></li>
+                <li class="navitem"><a href="#Sorteo" class="navlink">¡SORTEO! </a></li>
+                <li class="navitem"><a href="./login.html" class="navlink">Ingresá</a></li>
+            </ul>
+            <div class="grilla">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="Inicio" id="Inicio">
+        <div class="Satungo">
+
+            <h2>TODO PARA TU MASCOTA</h2>
+        </div>
+    </section>
+
+    <section class="Pedido" id="Pedido">
+        <div class="Productos">
+            <h3 class="comocomprar">¿CÓMO COMPRAR?</h3>
+            <p>SELECCIONÁ EL PRODUCTO QUE QUERES</p>
+            <p>LO LLEVAS AL CARRITO</p>
+            <p>Y LO PAGAS DE MANERA ONLINE</p>
+            <label for="search">¿Qué necesitás?</label>
+            <form id="form">
+                <input type="text" name="search" id="search" placeholder="Ingresá el nombre del producto">
+                <button type="submit" value="BUSCAR" id="buttonSearch">BUSCAR</button>
+            </form>
+
+            <label for="productButton">O haciendo click en:</label>
+            <button class="productButton" id="productButton"> <a href="./tienda.html">TODOS LOS PRODUCTOS</a> </button>
+        </div>
+        <div id="containerSearch"></div>
+
+    </section>
+
+    <section class="Sorteo" id="Sorteo">
+        <h4 class="escribinos">PARTICIPÁ DEL SORTEO</h4>
+        <P>¿Queres ganar premios para tu mascota? </P>
+        <p>Completá el formulario con tus datos y lo que te gustaría ganar</p>
+        <p>¡Y mucha suerte para tu peludo!</p>
+        <div class="container-form">
+            <form action="method" class="formulario" id="formsorteo">
+                <div class="webform">
+                    <label for="FormNombre">Nombre y Apellido:</label>
+                    <input type="text" name="FormNombre" placeholder="NOMBRE Y APELLIDO" id="FormNombre" required>
+                </div>
+                <div class="webform">
+                    <label for="FormTel">Telefono:</label>
+                    <input type="number" name="FormTel" placeholder="TELÉFONO" id="FormTel" required>
+                </div>
+                <div class="webform">
+                    <label for="FormEmail">Email:</label>
+                    <input type="email" name="FormEmail" placeholder="EMAIL" id="FormEmail" required>
+                </div>
+                <div class="webform">
+                    <label for="FormMensaje">Ingredientes:</label>
+                    <input type="text" name="FormMensaje" placeholder="PRODUCTO DESEADO" id="FormMensaje" required>
+                </div>
+                <div class="webform">
+                    <input type="submit" value="ENVIAR" id="FormSubmit" required>
+                </div>
+            </form>
+            <div id="cardtuhambur"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="Copy">© Copyright Satungo. Todos los derechos reservados. </p>
+
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="./DOM.js"></script>
+</body>
+
+</html>

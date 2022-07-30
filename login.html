@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="../Iconos/fontawesome-free-5.15.4-web/css/all.css">
+    <title>Satungo</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedorlogo">
+            <a href="./index.html"><img src="./Imgs/pngegg.png" alt="Logo" class="navlogo"></a>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="listanav" id="listanav">
+                <li class="navitem"><a href="./index.html" class="navlink">Inicio</a></li>
+                <li class="navitem"><a href="./tienda.html" class="navlink">Hacé tu pedido</a></li>
+                <li class="navitem"><a href="./index.html" class="navlink">¡SORTEO! </a></li>
+                <li class="navitem"><a href="./login.html" class="navlink">Ingresá</a></li>
+            </ul>
+            <div class="satungo">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="Login">
+        <div class="contenedor-login">
+            <div class="inicio-sesion">
+                <h3 class="h3login">INICIA SESION</h3>
+                <form action="method" class="form-login">
+                    <input type="email" name="email" id="email" placeholder="Correo Electrónico" required>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    <input type="submit" value="INGRESAR" id="ingresar" required>
+                </form>
+                <p>¿Aún no tenes cuenta? <a href="./registro.html" class="registrate">REGISTRATE.</a> </p>
+            </div>
+            <div class="login-opciones">
+                <h3 class="h3login">TAMBIÉN PODES INGRESAR CON</h3>
+                <input type="button" name="btn-facebook" value="Acceder con Facebook" id="btn-facebook">
+                <input type="button" name="btn-google" value="Acceder con Google" id="btn-google">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="Copy">© Copyright Satungo. Todos los derechos reservados. </p>
+    </footer>
+    <script src="./DOM.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
